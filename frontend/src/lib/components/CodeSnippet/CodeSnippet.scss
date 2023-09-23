@@ -1,0 +1,27 @@
+.CodeSnippet {
+    position: relative;
+    .CodeSnippet__actions {
+        position: absolute;
+        display: flex;
+        top: 0.25rem;
+        right: 0.25rem;
+        gap: 0.5rem;
+        font-size: 1.5rem;
+
+        // NOTE: This is not ideal as we should not override core components styles but...
+        .LemonButton {
+            background: transparent !important;
+            box-shadow: transparent !important;
+
+            .LemonIcon {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.posthog-3000 .CodeSnippet pre {
+    background: var(--accent-3000-dark) !important;
+    border: solid 1px var(--border-3000-dark) !important;
+    border-radius: var(--radius) !important;
+}
